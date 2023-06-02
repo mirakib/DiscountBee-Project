@@ -261,6 +261,66 @@ body {
   right: 10px;
 }
 
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  
+}
+
+.footer__links__column {
+  flex-basis: 70%;
+  
+}
+
+.footer__links h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links li {
+  margin-bottom: 5px;
+}
+
+.footer__links a {
+    color: #D2D6D6;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+.footer__address {
+  margin-top: 20px;
+  text-align: left; /* Align the text to the left */
+  color: #fff;
+}
+
+.footer__address h3,
+.footer__address p {
+  margin-left: 150px; /* Add left margin to align with footer links */
+}
+
+.footer__line {
+  margin: 0 11%; /* Add left and right margin of 5% */
+  border: none;
+  border-top: 2px solid gray; /* Set the border-top to create a horizontal line */
+}
+
+.footer__copyright {
+  text-align: center;
+  margin: 10px 0;
+  color: rgb(245, 245, 245);
+}
+
 
 </style>
 </head>
@@ -333,6 +393,44 @@ body {
     </div>
     
 
+    <div class="footer__links">
+        <div class="footer__links__column">
+          <h2>Work with Us</h2>
+          <ul>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <h2>Company</h2>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">How it Works</a></li>
+            <li><a href="#">Terms and Condition</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer__links__column">
+          <h2>Need Help?</h2>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      
+      <div class="footer__address">
+        <h3>Where to find us</h3>
+        <p>Dhaka, Bangladesh</p>
+        <p>Mirpur 10, 1231</p>
+      </div>
+
+      <hr class="footer__line">
+
+<p class="footer__copyright">
+  &copy; 2023 Discount Bee
+</p>
 
 
   </footer>
