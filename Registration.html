@@ -137,22 +137,22 @@
 
     <div class="container">
         <h2>Let's go........</h2>
-        <form>
+        <form method="POST" action="Registration.php">
           <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name">
+            <input type="text" id="name" name="name">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email">
+            <input type="email" id="email" name="email">
           </div>
           <div class="form-group">
             <label for="age">Age</label>
-            <input type="date" id="age">
+            <input type="date" id="age" name="age">
           </div>
           <div class="form-group">
             <label for="gender">Gender</label>
-            <select id="gender">
+            <select id="gender" name="gender">
               <option value=""></option>
               <option value="male">Male</option>
               <option value="female">Female</option>
@@ -161,11 +161,15 @@
           </div>
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password">
-          </div>
+            <?php if (isset($passwordError)) { ?>
+                <span class="warning"><?php echo $passwordError; ?></span>
+            <?php } ?>
+            <input type="password" id="password" name="password" name="password">
+        </div>
+        
           <div class="form-group">
             <label for="confirm-password">Confirm Password</label>
-            <input type="password" id="confirm-password">
+            <input type="password" id="confirm-password" name="confirm-password">
           </div>
           <div class="form-group">
             <button type="submit">Register</button>
