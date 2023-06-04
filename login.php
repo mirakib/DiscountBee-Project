@@ -25,9 +25,11 @@
             header("Location: home.html");
             exit;
         } else {
-            echo '<div style="color: red;">Invalid email or password</div>';
+            echo '<script>alert("Invalid email or password"); window.location.href = "login.html";</script>';
         }
 
         $conn->close();
     }
 ?>
+
+
