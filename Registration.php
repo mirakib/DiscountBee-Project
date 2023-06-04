@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
 
         if ($stmt->affected_rows > 0) {
-            header("Location: Dashboard.html");
+            header("Location: Dashboard/Dashboard.html");
             exit; 
         } else {
             echo "Error: Failed to register user.";
