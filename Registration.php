@@ -21,7 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verify passwords match
     if ($password !== $confirmPassword) {
         $passwordError = "Passwords do not match";
-    } else {
+    } 
+    
+    else {
         $stmt = $conn->prepare("INSERT INTO user_info (name, email, age, gender, password) VALUES (?, ?, ?, ?, ?)");
         $stmt->bind_param("ssiss", $name, $email, $age, $gender, $password);
         $stmt->execute();
