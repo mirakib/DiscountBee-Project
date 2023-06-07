@@ -1,5 +1,6 @@
-
 <?php
+    session_start(); // Start the session
+
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = $_POST["email"];
         $password = $_POST["password"];
@@ -11,7 +12,6 @@
 
         $conn = new mysqli($servername, $username, $password_db, $dbname);
 
-
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
@@ -20,16 +20,14 @@
 
         $result = $conn->query($sql);
 
-
         if ($result->num_rows > 0) {
+            $_SESSION['email'] = $email; // Set the 'email' key in the $_SESSION array
             header("Location: home.html");
             exit;
         } else {
             echo '<script>alert("Invalid email or password"); window.location.href = "login.html";</script>';
         }
 
-        $conn->close();
+
     }
 ?>
-
-
