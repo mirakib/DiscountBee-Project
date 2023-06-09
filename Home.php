@@ -1,3 +1,7 @@
+<?php
+  session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -329,11 +333,19 @@ body {
   <div class="header">
     <img class="logo" src="logo.png">
     <div class="header-right" id="header-buttons">
-      <a href="login.html">Login</a>
-      <a class="active" href="registration.html">Registration</a>
+        <?php
+        if (isset($_SESSION['email'])) {
+            // User is logged in, show logout button
+            echo '<a href="logout.php">Logout</a>';
+        } else {
+            // User is not logged in, show registration and login buttons
+            echo '<a href="loginHTML.php">Login</a>';
+            echo '<a class="active" href="registrationHTML.php">Registration</a>';
+        }
+        ?>
     </div>
-  </div>
-  
+</div>
+
   
 
 <div class="navbar">

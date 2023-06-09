@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (isset($_SESSION["email"])) {
+    // Redirect to the home page or any other page
+    header("Location: home.php");
+    exit;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -116,7 +126,7 @@
     <nav class="css-1bijsjo">
         <div>
             <div style="float: left; position: relative; width: 25%; padding-left: 10px; padding-right: 10px;">
-                <a href="home.html" aria-label="Back" tabindex="0" element="a" class="css-1qpa9mn">
+                <a href="home.php" aria-label="Back" tabindex="0" element="a" class="css-1qpa9mn">
                     <svg style="vertical-align: top;" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M8 1L7.542 1.379L1 8.628V14C1 14.552 1.448 15 2 15H5C5.552 15 6 14.552 6 14V10C6 9.448 6.448 9 7 9H9C9.552 9 10 9.448 10 10V14C10 14.552 10.448 15 11 15H14C14.552 15 15 14.552 15 14V8.628L8.458 1.379L8 1Z" stroke="#272727" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                     </svg>
@@ -126,7 +136,7 @@
             </div>
 
             <div style="float: left; position: relative; width: 50%; padding-left: 10px; padding-right: 10px; text-align: center;">
-                <a href="home.html" class="css-1y633en">
+                <a href="Home.php" class="css-1y633en">
                     <img class="logo" src="logo.png" class="css-10qpvih">
                 </a>
             </div>
@@ -175,7 +185,7 @@
             <button type="submit">Register</button>
           </div>
           <div class="form-group message">
-            Already have an account? <a href="login.html">Login</a>
+            Already have an account? <a href="loginHTML.php">Login</a>
           </div>
         </form>
       </div>
