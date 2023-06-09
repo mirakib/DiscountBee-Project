@@ -7,6 +7,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {box-sizing: border-box;}
 
@@ -52,6 +53,7 @@ body {
 
 .header a.active {
   background-color: rgb(101, 35, 227);
+  margin-left: 2px;
   color: white;
 }
 
@@ -89,6 +91,8 @@ body {
 }
 
 .navbar__buttons a {
+  border: 1px solid gray;
+  border-radius: 7px;
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none;
@@ -97,6 +101,7 @@ body {
 }
 
 .navbar__buttons a:hover {
+  border-radius: 7px;
   background-color: gray;
   color: white;
 }
@@ -325,7 +330,6 @@ body {
   color: rgb(245, 245, 245);
 }
 
-
 </style>
 </head>
 <body>
@@ -335,10 +339,11 @@ body {
     <div class="header-right" id="header-buttons">
         <?php
         if (isset($_SESSION['email'])) {
-            // User is logged in, show logout button
-            echo '<a href="logout.php">Logout</a>';
+
+            echo '<a class="active" href="Profile.php" style="background-color: seagreen;">Account</a>';
+            echo '<a class="active" href="logout.php">Logout</a>';
         } else {
-            // User is not logged in, show registration and login buttons
+
             echo '<a href="loginHTML.php">Login</a>';
             echo '<a class="active" href="registrationHTML.php">Registration</a>';
         }
@@ -362,11 +367,6 @@ body {
     <div class="navbar__dropdown">
       <a href="#">More</a>
       <div class="navbar__dropdown-content">
-        <a href="#">Dropdown Item 1</a>
-        <a href="#">Dropdown Item 2</a>
-        <a href="#">Dropdown Item 3</a>
-        <a href="#">Dropdown Item 4</a>
-        <a href="#">Dropdown Item 5</a>
       </div>
     </div>
   </div>
@@ -420,7 +420,7 @@ body {
           <ul>
             <li><a href="#">About</a></li>
             <li><a href="#">How it Works</a></li>
-            <li><a href="#">Terms and Condition</a></li>
+            <li><a href="Term.html">Terms and Condition</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
         </div>
