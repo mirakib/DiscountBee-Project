@@ -5,6 +5,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Home - DiscountBee</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -340,7 +341,7 @@ body {
         <?php
         if (isset($_SESSION['email'])) {
 
-            echo '<a class="active" href="Profile.php" style="background-color: seagreen;">Account</a>';
+            echo '<a class="active" href="Profile.php" style="background-color: white; color: black; border: 2px solid black;">Account</a>';
             echo '<a class="active" href="logout.php">Logout</a>';
         } else {
 
@@ -421,14 +422,14 @@ body {
             <li><a href="#">About</a></li>
             <li><a href="#">How it Works</a></li>
             <li><a href="Term.html">Terms and Condition</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="Privacy.html">Privacy Policy</a></li>
           </ul>
         </div>
         <div class="footer__links__column">
           <h2>Need Help?</h2>
           <ul>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="Faq.html">FAQs</a></li>
+            <li><a href="Contact.php">Contact</a></li>
           </ul>
         </div>
       </div>

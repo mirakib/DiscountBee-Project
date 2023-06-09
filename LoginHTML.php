@@ -15,7 +15,7 @@ if (isset($_SESSION["email"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
-    <title>Document</title>
+    <title>Sign in - DiscountBee</title>
 
     <style>
         body {
@@ -153,10 +153,10 @@ if (isset($_SESSION["email"])) {
           <input type="password" id="password" name="password">
       </div>
       <div class="form-group">
-          <button type="submit">Login</button>
+          <button type="submit">Sign in</button>
       </div>
       <div class="form-group message">
-          Don't have an account? <a href="registrationHTML.php">Register</a>
+          Don't have an account? <a href="registrationHTML.php">Sign in</a>
       </div>
   </form>  
   </div>

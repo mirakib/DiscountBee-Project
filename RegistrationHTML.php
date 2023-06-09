@@ -15,7 +15,7 @@ if (isset($_SESSION["email"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Almarai' rel='stylesheet'>
-    <title>Document</title>
+    <title>Sign up - DiscountBee</title>
 
     <style>
         body {
@@ -164,9 +164,9 @@ if (isset($_SESSION["email"])) {
             <label for="gender">Gender</label>
             <select id="gender" name="gender">
               <option value=""></option>
-              <option value="male">Male</option>
-              <option value="female">Female</option>
-              <option value="other">Other</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div class="form-group">
@@ -182,10 +182,10 @@ if (isset($_SESSION["email"])) {
             <input type="password" id="confirm-password" name="confirm-password">
           </div>
           <div class="form-group">
-            <button type="submit">Register</button>
+            <button type="submit">Sign up</button>
           </div>
           <div class="form-group message">
-            Already have an account? <a href="loginHTML.php">Login</a>
+            Already have an account? <a href="loginHTML.php">Sign in</a>
           </div>
         </form>
       </div>
