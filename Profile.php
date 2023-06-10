@@ -146,7 +146,7 @@ tr:hover {
     </nav>
 
   <div class="container">
-    <h1>User Profile</h1>
+    <h1>Your Profile</h1>
     <?php
       // Check if the user is logged in and the email is stored in the session
       session_start();
@@ -197,7 +197,7 @@ tr:hover {
 
         $conn->close();
       } else {
-        echo "Please log in to view the user profile.";
+        echo "Please log in to view the your profile.";
       }
     ?>
   </div>

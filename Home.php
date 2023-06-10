@@ -137,6 +137,7 @@ body {
 }
 
 .gradient-section {
+  
   background: linear-gradient(rgb(101, 35, 227), #000);
   text-align: center;
   padding: 50px;
