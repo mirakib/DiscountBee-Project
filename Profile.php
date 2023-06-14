@@ -1,5 +1,3 @@
-<!-- profile.php -->
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -148,12 +146,10 @@ tr:hover {
   <div class="container">
     <h1>Your Profile</h1>
     <?php
-      // Check if the user is logged in and the email is stored in the session
       session_start();
       if (isset($_SESSION['email'])) {
         $email = $_SESSION['email'];
 
-        // Connect to the database
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -161,12 +157,10 @@ tr:hover {
 
         $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Check connection
         if ($conn->connect_error) {
           die("Connection failed: " . $conn->connect_error);
         }
 
-        // Prepare and execute SQL query
         $sql = "SELECT * FROM user_info WHERE email = '$email'";
         $result = $conn->query($sql);
 

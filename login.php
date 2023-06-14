@@ -26,7 +26,7 @@
             header("Location: home.php");
             exit;
         } else {
-            echo '<script>alert("Invalid email or password"); window.location.href = "login.php";</script>';
+            echo '<script>alert("Invalid email or password"); window.location.href = "loginHTML.php";</script>';
         }
     }
 ?>

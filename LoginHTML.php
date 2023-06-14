@@ -142,7 +142,7 @@ if (isset($_SESSION["email"])) {
 
     <div class="container">
     <h2>Hello again!</h2>
-    <p>Log in to your Discount Bee account</p>
+    <p>Log in to your <span style="color: blue;">Discount Bee</span> account</p>
     <form method="post" action="login.php">
       <div class="form-group">
           <label for="email">Email</label>
