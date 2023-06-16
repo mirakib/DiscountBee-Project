@@ -81,6 +81,8 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 2; /* Add this line to set the z-index */
 }
 
 .navbar__logo {
@@ -335,6 +337,40 @@ body {
   color: rgb(245, 245, 245);
 }
 
+.column {
+  float: left;
+  width: 20%;
+  padding: 0 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 0 -5px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 80%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
 </style>
 </head>
 <body>
@@ -396,7 +432,40 @@ body {
       <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
   </div>
+
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Card 1</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Card 2</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
   
+  <div class="column">
+    <div class="card">
+      <h3>Card 3</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Card 4</h3>
+      <p>Some text</p>
+      <p>Some text</p>
+    </div>
+  </div>
+</div>
   
 
 <footer class="footer">
