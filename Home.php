@@ -430,7 +430,7 @@ body {
           <h2>Need Help?</h2>
           <ul>
             <li><a href="Faq.html">FAQs</a></li>
-            <li><a href="Contact.php">Contact</a></li>
+            <li><a href="Contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
