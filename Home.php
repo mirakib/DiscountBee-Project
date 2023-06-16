@@ -78,6 +78,9 @@ body {
   background-color: white;
   text-align: center;
   padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .navbar__logo {
