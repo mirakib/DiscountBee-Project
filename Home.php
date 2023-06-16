@@ -346,7 +346,7 @@ body {
             echo '<a class="active" href="logout.php">Logout</a>';
         } else {
 
-            echo '<a href="loginHTML.php">Login</a>';
+            echo '<a class="login" href="loginHTML.php">Login</a>';
             echo '<a class="active" href="registrationHTML.php">Registration</a>';
         }
         ?>

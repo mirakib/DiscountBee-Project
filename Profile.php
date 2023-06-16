@@ -13,7 +13,7 @@
   min-height: 100vh;
 }
 .container {
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f8f8f8;
@@ -164,7 +164,6 @@ tr:hover {
         $sql = "SELECT * FROM user_info WHERE email = '$email'";
         $result = $conn->query($sql);
 
-        // Display user information
         if ($result->num_rows > 0) {
           echo "<table>";
           while($row = $result->fetch_assoc()) {
