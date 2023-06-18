@@ -82,7 +82,7 @@ body {
   position: sticky;
   top: 0;
   border-bottom: 1px solid #ddd;
-  z-index: 2; /* Add this line to set the z-index */
+  z-index: 2;
 }
 
 .navbar__logo {
