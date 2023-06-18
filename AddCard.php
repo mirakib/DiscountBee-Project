@@ -110,29 +110,34 @@ border: 1px solid rgb(101, 35, 227);
 
 <div id="main">
   <div class="form-container">
-    <form method="POST" action="AdSubmit.php" enctype="multipart/form-data">
-      <label for="image">Image:</label>
-      <input type="file" name="image" required>
-      <br><br>
+  <form method="POST" action="AdSubmit.php" enctype="multipart/form-data">
+  <label for="image">Image:</label>
+  <input type="file" name="image" required>
+  <br><br>
 
-      <label for="tagline">Tagline:</label>
-      <input type="text" name="tagline" required>
-      <br><br>
+  <label for="tagline">Tagline:</label>
+  <input type="text" name="tagline" required>
+  <br><br>
 
-      <label for="hyperlink">Hyperlink:</label>
-      <input type="text" name="hyperlink" required>
-      <br><br>
+  <label for="hyperlink">Hyperlink:</label>
+  <input type="text" name="hyperlink" required>
+  <br><br>
 
-      <label for="redeem_condition">How to Redeem:</label>
-      <textarea name="redeem_condition" rows="4" cols="50" required></textarea>
-      <br><br>
+  <label for="redeem_condition">How to Redeem:</label>
+  <textarea name="redeem_condition" rows="4" cols="50" required></textarea>
+  <br><br>
 
-      <label for="category">Category:</label>
-      <input type="text" name="category" required>
-      <br><br>
+  <label for="category">Category:</label>
+  <input type="text" name="category" required>
+  <br><br>
 
-      <input type="submit" name="submit" value="Submit">
-    </form>
+  <label for="company">Company:</label>
+  <input type="text" name="company" required>
+  <br><br>
+
+  <input type="submit" name="submit" value="Submit">
+</form>
+
   </div>
 </div>
 

@@ -369,36 +369,19 @@ body {
 
 <div class="navbar">
   <div class="navbar__buttons">
-    <a href="#">Trending Now</a>
+    <a href="Home.php">Home</a>
     <a href="Tech.php">Food</a>
     <a href="Tech.php">Fashion</a>
     <a href="Tech.php">Tech & Mobile</a>
-    <a href="#">Beauty</a>
-    <a href="#">Health</a>
-    <a href="#">Travel</a>
-    <a href="#">Entertainment</a>
-  </div>
-</div>
+    <a href="Tech.php">Beauty</a>
+    <a href="Tech.php">Health</a>
+    <a href="Tech.php">Travel</a>
+    <a href="Tech.php">Entertainment</a>
 
-<div class="gradient-section">
-  <h1 class="section-header">Making your life a little <br> sweeter and a lot cheaper</h1>
-  <div class="search-box">
-    <input type="text" placeholder="Brand, items or categories">
-    <input type="submit" value="Search">
   </div>
 </div>
 
 
-  <div class="slideshow">
-    <div class="slideshow-container">
-      <a href="link1.html"><img class="slide" src="Images/Advertisements/image1.jpeg" alt="Image 1"></a>
-      <a href="link2.html"><img class="slide" src="Images/Advertisements/image2.jpeg" alt="Image 2"></a>
-      <a href="link3.html"><img class="slide" src="Images/Advertisements/image3.jpeg" alt="Image 3"></a>
-      <a href="link4.html"><img class="slide" src="Images/Advertisements/image4.jpeg" alt="Image 4"></a>
-      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-      <a class="next" onclick="changeSlide(1)">&#10095;</a>
-    </div>
-  </div>
 
   <div class="frame-container">
   <iframe src="exp.php" width="90%" height="500px" frameborder="0"></iframe>
@@ -458,41 +441,6 @@ body {
 
 </footer>
 
-<script>
-
-let slideIndex = 1;
-showSlide(slideIndex);
-
-function changeSlide(n) {
-  showSlide(slideIndex += n);
-}
-
-function showSlide(n) {
-  const slides = document.getElementsByClassName("slide");
-
-  if (n > slides.length) {
-    slideIndex = 1;
-  } else if (n < 1) {
-    slideIndex = slides.length;
-  }
-
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  
-
-  slides[slideIndex - 1].style.display = "block";
-}
-
-document.querySelector(".prev").addEventListener("click", function() {
-  changeSlide(-1);
-});
-
-document.querySelector(".next").addEventListener("click", function() {
-  changeSlide(1);
-});
-
-</script>
 
 </body>
 </html>
