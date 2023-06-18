@@ -119,6 +119,8 @@ tr:hover {
     .button-container button:hover {
       background-color: #cc0000;
     }
+
+    
   </style>
 </head>
 <body>
@@ -197,8 +199,12 @@ tr:hover {
 
   <div class="button-container">
       <button onclick="location.href='home.php'" style="background-color:rgb(101, 35, 227);;">Home</button>
+      <button onclick="location.href='AddCard.php'" style="background-color:rgb(101, 35, 227);;">Manage</button>
       <button onclick="location.href='logout.php'">Logout</button>
     </div>
+
+
+   
 
 </body>
 </html>
