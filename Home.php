@@ -421,7 +421,6 @@ body {
         <div class="footer__links__column">
           <h2>Work with Us</h2>
           <ul>
-            <li><a href="#">Advertise</a></li>
             <li><a href="https://careers.smartrecruiters.com/discountbee">Careers</a></li>
           </ul>
         </div>
